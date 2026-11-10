@@ -1,0 +1,132 @@
+<!--Name: Khushbakht Siknadar
+Roll Number: 26i-3025
+Section: A
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart | Verve Coffee</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="img.webp" alt="Verve Coffee Logo" class="logo-img">
+                <div class="logo-text">
+                    <span class="brand-name">Verve Coffee</span>
+                    <span class="brand-tagline">Artisan Roasters</span>
+                </div>
+            </a>
+            <nav class="navbar">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="menu.html" class="nav-link">Menu</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="cart.html" class="nav-link active cart-link">
+                    Cart <span class="cart-badge" id="cartBadge">0</span>
+                </a>
+            </nav>
+            <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <section class="page-banner">
+        <h1>Your Shopping Cart</h1>
+        <p>Review your selected drinks and complete your order</p>
+    </section>
+
+    <main class="section container">
+        <div class="cart-layout">
+            <div class="cart-table-container">
+                <table class="cart-table">
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cartTableBody">
+                    </tbody>
+                </table>
+                <div id="emptyCartMsg" class="empty-cart-msg">
+                    <p>Your shopping cart is currently empty.</p>
+                    <a href="menu.html" class="btn btn-secondary margin-top-sm">Browse Menu</a>
+                </div>
+            </div>
+
+            <div class="cart-summary-card">
+                <h3>Order Summary</h3>
+                <div class="summary-line">
+                    <span>Subtotal</span>
+                    <span id="subtotalPrice">$0.00</span>
+                </div>
+                <div class="summary-line">
+                    <span>Estimated Tax (10%)</span>
+                    <span id="taxPrice">$0.00</span>
+                </div>
+                <hr>
+                <div class="summary-line total-line">
+                    <span>Grand Total</span>
+                    <span id="grandTotalPrice">$0.00</span>
+                </div>
+
+                <div class="cart-actions">
+                    <button onclick="order()" class="btn btn-primary full-width margin-bottom-sm">Order Now</button>
+                    <button onclick="clearCart()" class="btn btn-outline full-width">Clear Cart</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <div class="logo logo-footer">
+                    <img src="img.webp" alt="Verve Coffee Logo" class="logo-img">
+                    <span class="brand-name">Verve Coffee</span>
+                </div>
+                <p>Crafting memorable coffee experiences through precision roasting.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact & Reserve</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Opening Hours</h4>
+                <p>Mon - Fri: 7:00 AM - 8:00 PM</p>
+                <p>Sat - Sun: 8:00 AM - 9:00 PM</p>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <p>123 Artisan Roasters Way, Downtown</p>
+                <p>Phone: (555) 019-2834</p>
+                <p>Email: hello@vervecoffee.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container flex-between">
+                <p>&copy; 2026 Verve Coffee. Student: Khushbakht Siknadar (26i-3025, Sec A)</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="toast-container" class="toast-container"></div>
+    <script src="script.js"></script>
+</body>
+</html>

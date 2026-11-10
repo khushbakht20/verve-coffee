@@ -1,0 +1,212 @@
+<!--Name: Khushbakht Siknadar
+Roll Number: 26i-3025
+Section: A
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verve Coffee | Richly Brewed • Artisan Roasters</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="img.webp" alt="Verve Coffee Logo" class="logo-img">
+                <div class="logo-text">
+                    <span class="brand-name">Verve Coffee</span>
+                    <span class="brand-tagline">Artisan Roasters</span>
+                </div>
+            </a>
+            <nav class="navbar">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="menu.html" class="nav-link">Menu</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="cart.html" class="nav-link cart-link">
+                    Cart <span class="cart-badge" id="cartBadge">0</span>
+                </a>
+            </nav>
+            <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <span class="subheading">Est. 2010 • Premium Artisan Coffee</span>
+                <h1>Richly Brewed Perfection in Every Cup</h1>
+                <p>Experience hand-crafted espresso, artisanal single-origin roasts, and fresh baked pastries prepared daily with passion and precision.</p>
+                <div class="hero-buttons">
+                    <a href="menu.html" class="btn btn-primary">Explore Our Menu</a>
+                    <a href="contact.html" class="btn btn-secondary">Reserve a Table</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Banner -->
+        <section class="features-bar">
+            <div class="feature-item">
+                <div class="feature-icon">☕</div>
+                <h3>100% Arabica Beans</h3>
+                <p>Ethically sourced single-origin roasts.</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">🌿</div>
+                <h3>Sustainable Craft</h3>
+                <p>Eco-friendly packaging and fair-trade roots.</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">🥐</div>
+                <h3>Fresh Daily Pastries</h3>
+                <p>Baked in-house every morning.</p>
+            </div>
+        </section>
+
+        <!-- Featured Drinks -->
+        <section class="section container">
+            <div class="section-title">
+                <h2>Signature Favorites</h2>
+                <p>Discover our baseline classics and popular seasonal brews</p>
+            </div>
+            <div class="grid grid-3">
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?auto=format&fit=crop&w=600&q=80" alt="Espresso">
+                        <span class="badge">Classic</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3>Espresso</h3>
+                            <span class="price">$6.00</span>
+                        </div>
+                        <p>Rich, bold double shot extracted under precise temperature and pressure.</p>
+                        <button class="btn btn-small btn-add-cart" data-id="1" data-name="Espresso" data-price="6.00" data-category="hot" data-img="https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?auto=format&fit=crop&w=600&q=80">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1572442388796-11668ba67e53?auto=format&fit=crop&w=600&q=80" alt="Cappuccino">
+                        <span class="badge">Popular</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3>Cappuccino</h3>
+                            <span class="price">$6.00</span>
+                        </div>
+                        <p>Equal parts espresso, velvety steamed milk, and dense silky foam layer.</p>
+                        <button class="btn btn-small btn-add-cart" data-id="2" data-name="Cappuccino" data-price="6.00" data-category="hot" data-img="https://images.unsplash.com/photo-1572442388796-11668ba67e53?auto=format&fit=crop&w=600&q=80">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1534778101976-62847782c213?auto=format&fit=crop&w=600&q=80" alt="Latte">
+                        <span class="badge">Best Seller</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3>Latte</h3>
+                            <span class="price">$9.00</span>
+                        </div>
+                        <p>Smooth, rich espresso balanced with silky steamed whole milk and latte art.</p>
+                        <button class="btn btn-small btn-add-cart" data-id="3" data-name="Latte" data-price="9.00" data-category="hot" data-img="https://images.unsplash.com/photo-1534778101976-62847782c213?auto=format&fit=crop&w=600&q=80">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center margin-top-lg">
+                <a href="menu.html" class="btn btn-secondary">View Full Menu &rarr;</a>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="section bg-light">
+            <div class="container">
+                <div class="section-title">
+                    <h2>What Our Guests Say</h2>
+                    <p>Community feedback from coffee enthusiasts</p>
+                </div>
+                <div class="grid grid-3">
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p>" standard for espresso in town! The aroma and atmosphere at Verve Coffee are unmatched."</p>
+                        <div class="author">
+                            <strong>Sarah Jenkins</strong>
+                            <span>Regular Guest</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"Their Lattes are remarkably smooth and perfectly balanced. My go-to morning spot!"</p>
+                        <div class="author">
+                            <strong>Marcus Vance</strong>
+                            <span>Digital Nomad</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"Friendly baristas, high-grade single-origin roasts, and incredible croissants."</p>
+                        <div class="author">
+                            <strong>Elena Rostova</strong>
+                            <span>Food Critic</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <div class="logo logo-footer">
+                    <img src="img.webp" alt="Verve Coffee Logo" class="logo-img">
+                    <span class="brand-name">Verve Coffee</span>
+                </div>
+                <p>Crafting memorable coffee experiences through precision roasting, ethical sourcing, and warm hospitality.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact & Reserve</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Opening Hours</h4>
+                <p>Mon - Fri: 7:00 AM - 8:00 PM</p>
+                <p>Sat - Sun: 8:00 AM - 9:00 PM</p>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <p>123 Artisan Roasters Way, Downtown</p>
+                <p>Phone: (555) 019-2834</p>
+                <p>Email: hello@vervecoffee.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container flex-between">
+                <p>&copy; 2026 Verve Coffee. All Rights Reserved. Student: Khushbakht Siknadar (26i-3025, Sec A)</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification Container -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

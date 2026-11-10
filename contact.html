@@ -1,0 +1,178 @@
+<!--Name: Khushbakht Siknadar
+Roll Number: 26i-3025
+Section: A
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Reservations | Verve Coffee</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="img.webp" alt="Verve Coffee Logo" class="logo-img">
+                <div class="logo-text">
+                    <span class="brand-name">Verve Coffee</span>
+                    <span class="brand-tagline">Artisan Roasters</span>
+                </div>
+            </a>
+            <nav class="navbar">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="menu.html" class="nav-link">Menu</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+                <a href="cart.html" class="nav-link cart-link">
+                    Cart <span class="cart-badge" id="cartBadge">0</span>
+                </a>
+            </nav>
+            <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <section class="page-banner">
+        <h1>Contact & Table Reservation</h1>
+        <p>Book your spot or send us your questions</p>
+    </section>
+
+    <main class="section container">
+        <div class="contact-grid">
+            <!-- Reservation Form -->
+            <div class="form-card">
+                <h2>Reserve a Table</h2>
+                <form id="reservationForm" onsubmit="handleReservation(event)">
+                    <div class="form-group">
+                        <label for="resName">Full Name</label>
+                        <input type="text" id="resName" required placeholder="Khushbakht Siknadar">
+                    </div>
+                    <div class="form-group">
+                        <label for="resEmail">Email Address</label>
+                        <input type="email" id="resEmail" required placeholder="name@example.com">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="resDate">Date</label>
+                            <input type="date" id="resDate" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="resTime">Time</label>
+                            <input type="time" id="resTime" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="resGuests">Number of Guests</label>
+                        <select id="resGuests" required>
+                            <option value="1">1 Person</option>
+                            <option value="2" selected>2 People</option>
+                            <option value="4">4 People</option>
+                            <option value="6">6+ People</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary full-width">Confirm Reservation</button>
+                </form>
+            </div>
+
+            <!-- Location & Hours Info -->
+            <div class="info-card">
+                <h2>Café Details</h2>
+                <div class="info-item">
+                    <strong>📍 Location:</strong>
+                    <p>123 Artisan Roasters Way, Downtown Coffee District</p>
+                </div>
+                <div class="info-item">
+                    <strong>📞 Phone:</strong>
+                    <p>(555) 019-2834</p>
+                </div>
+                <div class="info-item">
+                    <strong>✉️ Email:</strong>
+                    <p>hello@vervecoffee.com</p>
+                </div>
+                <div class="info-item">
+                    <strong>🕒 Operating Hours:</strong>
+                    <p>Monday - Friday: 7:00 AM - 8:00 PM</p>
+                    <p>Saturday - Sunday: 8:00 AM - 9:00 PM</p>
+                </div>
+
+                <!-- Map Placeholder -->
+                <div class="map-placeholder">
+                    <div class="map-pin">📍</div>
+                    <p>Interactive Map Embed Placeholder</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ Accordion -->
+        <div class="faq-section margin-top-lg">
+            <div class="section-title">
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            <div class="faq-item">
+                <h4 class="faq-question">Do you offer vegan or non-dairy milk options? <span>+</span></h4>
+                <div class="faq-answer">
+                    <p>Yes! We offer Oat milk, Almond milk, and Soy milk for any of our espresso beverages.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <h4 class="faq-question">Can I buy coffee beans for home brewing? <span>+</span></h4>
+                <div class="faq-answer">
+                    <p>Absolutely. All of our signature roasted beans are available for purchase in 250g and 1kg bags in-store or online.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <h4 class="faq-question">Is WiFi available for guests? <span>+</span></h4>
+                <div class="faq-answer">
+                    <p>Yes, high-speed complimentary WiFi is provided for all patrons in our coffee bar.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <div class="logo logo-footer">
+                    <img src="img.webp" alt="Verve Coffee Logo" class="logo-img">
+                    <span class="brand-name">Verve Coffee</span>
+                </div>
+                <p>Crafting memorable coffee experiences through precision roasting.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact & Reserve</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Opening Hours</h4>
+                <p>Mon - Fri: 7:00 AM - 8:00 PM</p>
+                <p>Sat - Sun: 8:00 AM - 9:00 PM</p>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <p>123 Artisan Roasters Way, Downtown</p>
+                <p>Phone: (555) 019-2834</p>
+                <p>Email: hello@vervecoffee.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container flex-between">
+                <p>&copy; 2026 Verve Coffee. Student: Khushbakht Siknadar (26i-3025, Sec A)</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="toast-container" class="toast-container"></div>
+    <script src="script.js"></script>
+</body>
+</html>
